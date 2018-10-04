@@ -1,0 +1,91 @@
+* {
+    color: white;
+    font-family:'Jura', sans-serif;
+}
+#background {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    height: 100%;
+    width:100%;
+    background-image: url("Images/galaxy.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+#page {
+    top: 0px;
+    width: 100%;
+    left: 0px;
+}
+#header {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+#title {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+#menu {
+    position: fixed;
+    top:-30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+    transition:2s;
+    height:20%;
+}
+#menu:hover {
+    height:100%;
+    box-shadow: 0px 0px 5px black;
+}
+#menu p {
+    color: white;
+    font-size:30px;
+}
+#menu a {
+    position: relative;
+    transition: 1s;
+    left: -120%;
+    display: list-item;
+    font-size: 30px;
+    color: gray;
+    z-index: 1;
+}
+#menu a:hover {
+    color: black;
+}
+#body {
+    position: absolute;
+    right: 10px;
+    width: 60%;
+}
+#sec {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+#secTitle h2, #secBody p {
+    color: black;
+}
+#footer {
+    text-align: right;
+    padding-right: 20px;
+}
+@media only screen and (max-width: 786px) {
+    #body {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        left:0px;
+        right: 0px;
+        z-index: -1;
+    }
+    #sec {
+        margin: 0px;
+        border-radius: 0px;
+    }
+}
